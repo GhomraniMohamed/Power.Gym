@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<a href="admin_dashboard.html">Logout</a>
+<head>
+    <link rel="stylesheet" href="style.css">
+    
+<meta charset="UTF-8">
+
+<nav class="navbar">
+<h1 class="logo">​🇵​​🇴​​🇼​​🇪​​🇷​ ​🇬​​🇾​​🇲​</h1>
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="classes.html">Classes</a></li>
+<li><a href="membership.html">Membership</a></li>
+<li><a href="trainers.html">Trainers</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+<div class="nav-btn">
+    <a href="#membership"class="btn">Join Now</a>
+</div>
+</nav>
+<title>Admin - Manage Plans</title>
+</head>
+
+<body >
+
+
+<header>
+<h1>Manage Membership Plans</h1>
+<p>View, edit, or add new membership plans</p>
+</header>
+
+<main>
+
+<!-- Existing Plans Table -->
+<section>
+<h2>Existing Plans</h2>
+
+<table border="1">
+<thead>
+<tr>
+<th>Plan Name</th>
+<th>Price</th>
+<th>Duration</th>
+<th>Features</th>
+<th>Actions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bronze</td>
+<td>$30</td>
+<td>Monthly</td>
+<td>Gym access</td>
+<td>Edit | Delete</td>
+</tr>
+<tr>
+<td>Silver</td>
+<td>$80</td>
+<td>Quarterly</td>
+<td>Gym + Classes</td>
+<td>Edit | Delete</td>
+</tr>
+<tr>
+<td>Gold</td>
+<td>$300</td>
+<td>Annual</td>
+<td>Full access + Trainer</td>
+<td>Edit | Delete</td>
+</tr>
+</tbody>
+</table>
+</section>
+
+<!-- Add New Plan Form -->
+<section>
+<h2>Add New Plan</h2>
+
+<form action="#" method="post">
+
+<label for="planname">Plan Name:</label><br>
+<input type="text" id="planname" name="planname"><br><br>
+
+<label for="price">Price:</label><br>
+<input type="number" id="price" name="price"><br><br>
+
+<label for="duration">Duration:</label><br>
+<input type="text" id="duration" name="duration"><br><br>
+
+<label for="features">Description / Features:</label><br>
+<textarea id="features" name="features" rows="4" cols="40"></textarea><br><br>
+
+<button type="submit">Add Plan</button>
+
+</form>
+</section>
+
+</main>
+
+
+<footer>
+<p>Power Gym Admin Panel</p>
+</footer>
+
+</body>
+</html>

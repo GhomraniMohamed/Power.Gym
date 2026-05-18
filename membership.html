@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Power Gym - Membership</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <h1 class="logo">POWER GYM</h1>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="classes.html">Classes</a></li>
+    <li><a href="membership.html">Membership</a></li>
+    <li><a href="trainers.html">Trainers</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-btn">
+    <a href="membership.html" class="btn">Join Now</a>
+  </div>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="classes.html">Classes</a>
+  <a href="membership.html">Membership</a>
+  <a href="trainers.html">Trainers</a>
+  <a href="contact.html">Contact</a>
+  <a href="membership.html" class="btn">Join Now</a>
+</div>
+
+<main>
+
+  <section class="pricing">
+    <h2 class="section-title">Membership Plans</h2>
+    <p class="section-subtitle">Each plan comes with its own features</p>
+
+    <div class="plans">
+
+      <div class="card">
+        <h3>Bronze Plan</h3>
+        <h1>$19<span>/month</span></h1>
+        <ul>
+          <li class="ok">Limited access to gym areas</li>
+          <li class="ok">Basic gym access</li>
+          <li class="ok">1 personal session / month</li>
+          <li class="no">Nutrition plan</li>
+          <li class="no">Guest pass</li>
+          <li class="no">Premium facilities</li>
+        </ul>
+        <a href="#register" class="btn">Get Started</a>
+      </div>
+
+      <div class="card popular">
+        <div class="badge">Most Popular</div>
+        <h3>Silver Plan</h3>
+        <h1>$39<span>/month</span></h1>
+        <ul>
+          <li class="ok">Full gym access</li>
+          <li class="ok">Group classes</li>
+          <li class="ok">4 personal sessions</li>
+          <li class="ok">Basic nutrition plan</li>
+          <li class="no">Guest pass</li>
+          <li class="no">Premium facilities</li>
+        </ul>
+        <a href="#register" class="btn">Get Started</a>
+      </div>
+
+      <div class="card">
+        <h3>Gold Plan</h3>
+        <h1>$59<span>/month</span></h1>
+        <ul>
+          <li class="ok">Unlimited access</li>
+          <li class="ok">All classes</li>
+          <li class="ok">Personal trainer</li>
+          <li class="ok">Full nutrition plan</li>
+          <li class="ok">Guest pass</li>
+          <li class="ok">Premium facilities</li>
+        </ul>
+        <a href="#register" class="btn">Get Started</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="form-section" id="register">
+    <h2>Join Power Gym</h2>
+    <p class="form-subtitle">Fill in your details to complete registration</p>
+
+    <form id="registerForm" novalidate>
+
+      <div class="row">
+        <div class="input-box">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Your full name">
+          <small>Name must be at least 3 characters</small>
+        </div>
+        <div class="input-box">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="you@example.com">
+          <small>Please enter a valid email</small>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-box">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" placeholder="+213 ...">
+        </div>
+        <div class="input-box">
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob">
+          <small>Date of birth is required</small>
+        </div>
+      </div>
+
+      <p class="plan-label">Selected Plan</p>
+      <div class="plans">
+        <input type="radio" name="plan" id="bronze">
+        <label for="bronze" class="plan">Bronze</label>
+        <input type="radio" name="plan" id="silver" checked>
+        <label for="silver" class="plan">Silver</label>
+        <input type="radio" name="plan" id="gold">
+        <label for="gold" class="plan">Gold</label>
+      </div>
+
+      <div class="terms">
+        <input type="checkbox" id="terms-check">
+        <label for="terms-check">I agree to the Terms of Service and Privacy Policy</label>
+      </div>
+
+      <button type="submit" class="submit-btn">Complete Registration</button>
+
+    </form>
+  </section>
+
+  <section class="payment-section">
+    <h2>Payment Methods</h2>
+    <p>We accept the following payment methods</p>
+    <ul class="payment-list">
+      <li><i class="fas fa-credit-card"></i> Credit Card</li>
+      <li><i class="fas fa-money-check"></i> Debit Card</li>
+      <li><i class="fas fa-money-bill-wave"></i> Cash at Gym</li>
+    </ul>
+  </section>
+
+  <section class="map-section">
+    <h2>Gym Location</h2>
+    <p style="color: var(--gray); margin-bottom: 20px;">Map will be displayed here.</p>
+  </section>
+
+</main>
+
+<footer>
+  <h3>Contact Information</h3>
+  <p><span class="red">Phone:</span> +213 0798104925</p>
+  <p><span class="red">Email:</span> powergym25@email.com</p>
+  <br>
+  <h4><span class="red">Opening Hours</span></h4>
+  <ul>
+    <li>Saturday - Thursday: 06:00 - 22:00</li>
+    <li>Friday: Closed</li>
+  </ul>
+  <p>Follow us on social media</p>
+  <div class="social-icons">
+    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+  </div>
+</footer>
+
+<script src="register.js" defer></script>
+<script src="main.js" defer></script>
+
+</body>
+</html>

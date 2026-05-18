@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Power Gym</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+  
+  <nav class="navbar">
+    <h1 class="logo">🇵🇴🇼🇪🇷 🇬🇾🇲</h1>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="classes.html">Classes</a></li>
+      <li><a href="membership.html">Membership</a></li>
+      <li><a href="trainers.html">Trainers</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="nav-btn">
+      <a href="membership.html?plan=Join%20Power%20Gym" class="btn">Join Now</a>
+    </div>
+
+    
+    <button class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="classes.html">Classes</a>
+    <a href="membership.html">Membership</a>
+    <a href="trainers.html">Trainers</a>
+    <a href="contact.html">Contact</a>
+    <a href="membership.html" class="btn">Join Now</a>
+  </div>
+
+  <main>
+
+    <section class="hero">
+      <video autoplay muted loop playsinline class="bg-video">
+        <source src="gym.mp4" type="video/mp4">
+      </video>
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <h1>WELCOME TO POWER GYM</h1>
+        <p>Train with professional trainers and modern equipment</p>
+        <a href="membership.html" class="btn">Join Now</a>
+      </div>
+    </section>
+
+   
+    <section class="services-section">
+      <h2 class="section-title">Our Services</h2>
+      <p class="section-subtitle">What we offer to help you get fit</p>
+
+      <div class="services">
+
+        <div class="service">
+          <img src="yogaa.jpg" alt="Yoga and Fitness">
+          <div class="text">
+            <h3>Yoga & Fitness</h3>
+            <p>Discover the perfect balance between body and mind through our yoga sessions.
+              Improve flexibility, reduce stress, and enhance your overall well-being.</p>
+          </div>
+        </div>
+
+        <div class="service reverse">
+          <img src="weight.jpg" alt="Strength Training">
+          <div class="text">
+            <h3>Strength Training</h3>
+            <p>Build muscle, increase strength, and transform your body with advanced equipment
+              and professionally designed training programs for all levels.</p>
+          </div>
+        </div>
+
+        <div class="service">
+          <img src="Personal training.jpg" alt="Personal Training">
+          <div class="text">
+            <h3>Personal Training</h3>
+            <p>Achieve your goals faster with one-on-one coaching. Our expert trainers create
+              personalized workout plans tailored to your needs.</p>
+          </div>
+        </div>
+
+        <div class="service reverse">
+          <img src="GroupClasses.jpg" alt="Group Classes">
+          <div class="text">
+            <h3>Group Classes</h3>
+            <p>Stay motivated and enjoy working out with others in energetic group sessions
+              full of fun, challenge, and teamwork.</p>
+          </div>
+        </div>
+
+        <div class="service">
+          <img src="CardioTraining.jpg" alt="Cardio Training">
+          <div class="text">
+            <h3>Cardio Training</h3>
+            <p>Improve your endurance, burn calories, and boost heart health with a wide
+              range of cardio equipment and high-energy workouts.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="brand-center">
+      <h1 class="logo">🇵🇴🇼🇪🇷 🇬🇾🇲</h1>
+      <h3>Your place to build strength and fitness</h3>
+    </div>
+
+   
+    <section class="facilities-section">
+      <h2>Our Facilities</h2>
+      <div class="facility-container">
+        <div class="facility">
+          <img src="cardio.jpg" alt="Cardio Room">
+          <h3>Cardio Room</h3>
+        </div>
+        <div class="facility">
+          <img src="weight.jpg" alt="Weight Training">
+          <h3>Professional Weight Training Area</h3>
+        </div>
+        <div class="facility">
+          <img src="swimming.jpg" alt="Swimming Pool">
+          <h3>Swimming Pool</h3>
+        </div>
+        <div class="facility">
+          <img src="yoga.jpg" alt="Yoga">
+          <h3>Yoga</h3>
+        </div>
+        <div class="facility">
+          <img src="rooms.jpg" alt="Locker Rooms">
+          <h3>Locker Rooms</h3>
+        </div>
+      </div>
+    </section>
+
+   
+    <section class="pricing" id="membership">
+      <h2>Membership Plans</h2>
+      <p>Each plan comes with its own features</p>
+
+      <div class="plans">
+
+        <div class="card">
+          <h3>Bronze Plan</h3>
+          <h1>$19<span>/month</span></h1>
+          <ul>
+            <li class="ok">Limited access to gym areas</li>
+            <li class="ok">Basic gym access</li>
+            <li class="ok">1 personal session / month</li>
+            <li class="no">Nutrition plan</li>
+            <li class="no">Guest pass</li>
+            <li class="no">Premium facilities</li>
+          </ul>
+          <a href="membership.html?plan=Bronze" class="btn">Join Now</a>
+        </div>
+
+        <div class="card popular">
+          <div class="badge">Most Popular</div>
+          <h3>Silver Plan</h3>
+          <h1>$39<span>/month</span></h1>
+          <ul>
+            <li class="ok">Full gym access</li>
+            <li class="ok">Group classes</li>
+            <li class="ok">4 personal sessions</li>
+            <li class="ok">Basic nutrition plan</li>
+            <li class="no">Guest pass</li>
+            <li class="no">Premium facilities</li>
+          </ul>
+          <a href="membership.html?plan=Silver" class="btn">Join Now</a>
+        </div>
+
+        <div class="card">
+          <h3>Gold Plan</h3>
+          <h1>$59<span>/month</span></h1>
+          <ul>
+            <li class="ok">Unlimited access</li>
+            <li class="ok">All classes</li>
+            <li class="ok">Personal trainer</li>
+            <li class="ok">Full nutrition plan</li>
+            <li class="ok">Guest pass</li>
+            <li class="ok">Premium facilities</li>
+          </ul>
+          <a href="membership.html?plan=Gold" class="btn">Join Now</a>
+        </div>
+
+      </div>
+    </section>
+
+    
+    <section class="map-section">
+      <h2>Gym Map</h2>
+      <p>Map will be displayed here.</p>
+    </section>
+
+  </main>
+
+  
+  <footer>
+    <h3>Contact Information</h3>
+    <p><span class="red">Phone:</span> +213 0798104925</p>
+    <p><span class="red">Email:</span> powergym25@email.com</p>
+
+    <h4><span class="red">Opening Hours</span></h4>
+    <ul>
+      <li>Saturday – Thursday: 06:00 – 22:00</li>
+      <li>Friday: Closed</li>
+    </ul>
+
+    <p>Follow us on social media</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+
+
+<script src="main.js"></script>
+</body>
+</html>

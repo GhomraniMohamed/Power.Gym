@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Power Gym - Contact</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <h1 class="logo">POWER GYM</h1>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="classes.html">Classes</a></li>
+    <li><a href="membership.html">Membership</a></li>
+    <li><a href="trainers.html">Trainers</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-btn">
+    <a href="membership.html" class="btn">Join Now</a>
+  </div>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="classes.html">Classes</a>
+  <a href="membership.html">Membership</a>
+  <a href="trainers.html">Trainers</a>
+  <a href="contact.html">Contact</a>
+  <a href="membership.html" class="btn">Join Now</a>
+</div>
+
+<main>
+
+  <section class="contact-section">
+    <h2 class="section-title">Send Us a Message</h2>
+
+    <form id="contact-form" class="contact-form" novalidate>
+
+      <div class="form-group">
+        <label for="contact-name">Name</label>
+        <input type="text" id="contact-name" placeholder="Your full name">
+        <small></small>
+      </div>
+
+      <div class="form-group">
+        <label for="contact-email">Email</label>
+        <input type="email" id="contact-email" placeholder="you@example.com">
+        <small></small>
+      </div>
+
+      <div class="form-group">
+        <label for="contact-subject">Subject</label>
+        <input type="text" id="contact-subject" placeholder="What is this about?">
+        <small></small>
+      </div>
+
+      <div class="form-group">
+        <label for="contact-message">
+          Message
+          <span id="char-count" style="float:right; font-size:12px; color:#e50914;">0 / 20 min</span>
+        </label>
+        <textarea id="contact-message" placeholder="Write your message here..."></textarea>
+        <small></small>
+      </div>
+
+      <button type="submit" class="btn" style="width:100%; padding:14px; font-size:16px;">
+        Send Message
+      </button>
+
+    </form>
+  </section>
+
+  <section class="map-section">
+    <h2>Opening Hours</h2>
+    <div class="gym-table-wrapper">
+      <table class="gym-table">
+        <tr>
+          <th>Day</th>
+          <th>Opening Time</th>
+        </tr>
+        <tr><td>Saturday</td><td>06:00 - 22:00</td></tr>
+        <tr><td>Sunday</td><td>06:00 - 22:00</td></tr>
+        <tr><td>Monday</td><td>06:00 - 22:00</td></tr>
+        <tr><td>Tuesday</td><td>06:00 - 22:00</td></tr>
+        <tr><td>Wednesday</td><td>06:00 - 22:00</td></tr>
+        <tr><td>Thursday</td><td>06:00 - 22:00</td></tr>
+        <tr><td>Friday</td><td>Closed</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section class="map-section">
+    <h2>Gym Location</h2>
+    <p style="color: var(--gray); margin-bottom: 20px;">Map will be displayed here.</p>
+  </section>
+
+</main>
+
+<footer>
+  <h3>© 2026 Power Gym</h3>
+  <p><span class="red">Phone:</span> +213 0798104925</p>
+  <p><span class="red">Email:</span> powergym25@email.com</p>
+  <br>
+  <h4><span class="red">Opening Hours</span></h4>
+  <ul>
+    <li>Saturday - Thursday: 06:00 - 22:00</li>
+    <li>Friday: Closed</li>
+  </ul>
+  <p>Follow us on social media</p>
+  <div class="social-icons">
+    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+  </div>
+</footer>
+
+<script src="contact.js" defer></script>
+<script src="main.js" defer></script>
+
+</body>
+</html>
